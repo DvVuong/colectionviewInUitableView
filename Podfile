@@ -8,4 +8,5 @@ target 'DemoA' do
   # Pods for DemoA
 pod 'RxSwift', '~> 5'
 pod 'RxCocoa', '~> 5'
+pod "RxGesture"
 end

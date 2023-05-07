@@ -48,10 +48,11 @@ extension TableViewCell2: UICollectionViewDelegate, UICollectionViewDataSource, 
         let cell = newsCollectionview.dequeueReusableCell(withReuseIdentifier: "newsCell", for: indexPath) as! newsCell
         let item = data[indexPath.row]
         cell.setData(item)
+        cell.backgroundColor = .red
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 100, height: 150)
+        return CGSize(width: 343, height: 300)
     }
 }

@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTable()
+        
+       
         arrays.append(.colectionView(model: [DataCollection(name: "colection", id: 1),
                                              DataCollection(name: "colection2", id: 2),
                                              DataCollection(name: "colection3", id: 3),
@@ -40,6 +42,7 @@ class ViewController: UIViewController {
     private func setUpTable() {
         listNewTableView.delegate = self
         listNewTableView.dataSource = self
+        listNewTableView.estimatedRowHeight = UITableView.automaticDimension
         listNewTableView.register(UINib(nibName: "NewsTableViewCell", bundle: nil), forCellReuseIdentifier: "newsTableViewCell")
     
         listNewTableView.register(UINib(nibName: "TableViewCell2", bundle: nil), forCellReuseIdentifier: "TableViewCell2")
@@ -82,8 +85,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch arrays[indexPath.section] {
-        case .colectionView(_ ): return 180
+        case .colectionView(_ ): return 300
         case .list(_ ): return UITableView.automaticDimension
         }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = GeneralExaminationViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        print("vuongdv Tap tap")
     }
 }

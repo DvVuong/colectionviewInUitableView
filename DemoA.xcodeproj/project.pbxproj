@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E211602C2A078CDB00D15A1F /* GeneralExaminationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E211602A2A078CDB00D15A1F /* GeneralExaminationViewController.swift */; };
+		E211602D2A078CDB00D15A1F /* GeneralExaminationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E211602B2A078CDB00D15A1F /* GeneralExaminationViewController.xib */; };
+		E260BBEC2A040CE20099D7DD /* CustomItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260BBEB2A040CE10099D7DD /* CustomItemView.swift */; };
 		E2A3B5732A01785500176282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3B5722A01785500176282 /* AppDelegate.swift */; };
 		E2A3B5752A01785500176282 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3B5742A01785500176282 /* SceneDelegate.swift */; };
 		E2A3B5772A01785500176282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3B5762A01785500176282 /* ViewController.swift */; };
@@ -29,6 +32,9 @@
 		12F13987EEC467400850B05D /* Pods-DemoA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoA.release.xcconfig"; path = "Target Support Files/Pods-DemoA/Pods-DemoA.release.xcconfig"; sourceTree = "<group>"; };
 		63F3CBEA25FFA41A84F39047 /* Pods_DemoA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE568D8EDC30F23429BF5145 /* Pods-DemoA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoA.debug.xcconfig"; path = "Target Support Files/Pods-DemoA/Pods-DemoA.debug.xcconfig"; sourceTree = "<group>"; };
+		E211602A2A078CDB00D15A1F /* GeneralExaminationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralExaminationViewController.swift; sourceTree = "<group>"; };
+		E211602B2A078CDB00D15A1F /* GeneralExaminationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralExaminationViewController.xib; sourceTree = "<group>"; };
+		E260BBEB2A040CE10099D7DD /* CustomItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomItemView.swift; sourceTree = "<group>"; };
 		E2A3B56F2A01785400176282 /* DemoA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A3B5722A01785500176282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2A3B5742A01785500176282 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,11 +111,14 @@
 				E2A3B5992A02663B00176282 /* newsCell.swift */,
 				E2A3B59A2A02663B00176282 /* newsCell.xib */,
 				E2A3B5922A019E6800176282 /* TableViewCell2.swift */,
+				E211602A2A078CDB00D15A1F /* GeneralExaminationViewController.swift */,
+				E211602B2A078CDB00D15A1F /* GeneralExaminationViewController.xib */,
 				E2A3B5962A02391E00176282 /* EnumCell.swift */,
 				E2A3B5932A019E6800176282 /* TableViewCell2.xib */,
 				E2A3B58A2A0194A200176282 /* NewsTableViewCell.swift */,
 				E2A3B58B2A0194A200176282 /* NewsTableViewCell.xib */,
 				E2A3B5762A01785500176282 /* ViewController.swift */,
+				E260BBEB2A040CE10099D7DD /* CustomItemView.swift */,
 				E2A3B5782A01785500176282 /* Main.storyboard */,
 				E2A3B57B2A0178A900176282 /* Assets.xcassets */,
 				E2A3B57D2A0178A900176282 /* LaunchScreen.storyboard */,
@@ -182,6 +191,7 @@
 				E2A3B59C2A02664000176282 /* newsCell.xib in Resources */,
 				E2A3B57C2A0178A900176282 /* Assets.xcassets in Resources */,
 				E2A3B58D2A0194A300176282 /* NewsTableViewCell.xib in Resources */,
+				E211602D2A078CDB00D15A1F /* GeneralExaminationViewController.xib in Resources */,
 				E2A3B5952A019E6800176282 /* TableViewCell2.xib in Resources */,
 				E2A3B57A2A01785500176282 /* Main.storyboard in Resources */,
 			);
@@ -236,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E211602C2A078CDB00D15A1F /* GeneralExaminationViewController.swift in Sources */,
 				E2A3B5772A01785500176282 /* ViewController.swift in Sources */,
 				E2A3B5732A01785500176282 /* AppDelegate.swift in Sources */,
 				E2A3B58C2A0194A300176282 /* NewsTableViewCell.swift in Sources */,
@@ -244,6 +255,7 @@
 				E2A3B5872A01806E00176282 /* ViewModel.swift in Sources */,
 				E2A3B5892A0180C500176282 /* DataResponse.swift in Sources */,
 				E2A3B5752A01785500176282 /* SceneDelegate.swift in Sources */,
+				E260BBEC2A040CE20099D7DD /* CustomItemView.swift in Sources */,
 				E2A3B5972A02391E00176282 /* EnumCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
