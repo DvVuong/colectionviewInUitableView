@@ -25,6 +25,7 @@
 		E2A3B5972A02391E00176282 /* EnumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3B5962A02391E00176282 /* EnumCell.swift */; };
 		E2A3B59B2A02664000176282 /* newsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3B5992A02663B00176282 /* newsCell.swift */; };
 		E2A3B59C2A02664000176282 /* newsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2A3B59A2A02663B00176282 /* newsCell.xib */; };
+		E2AD85922A0818C00053C6E3 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD85912A0818C00053C6E3 /* CustomLabel.swift */; };
 		F1A9C5286051166F8F92EE20 /* Pods_DemoA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F3CBEA25FFA41A84F39047 /* Pods_DemoA.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		E2A3B5962A02391E00176282 /* EnumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumCell.swift; sourceTree = "<group>"; };
 		E2A3B5992A02663B00176282 /* newsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsCell.swift; sourceTree = "<group>"; };
 		E2A3B59A2A02663B00176282 /* newsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = newsCell.xib; sourceTree = "<group>"; };
+		E2AD85912A0818C00053C6E3 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				E2A3B58A2A0194A200176282 /* NewsTableViewCell.swift */,
 				E2A3B58B2A0194A200176282 /* NewsTableViewCell.xib */,
 				E2A3B5762A01785500176282 /* ViewController.swift */,
+				E2AD85912A0818C00053C6E3 /* CustomLabel.swift */,
 				E260BBEB2A040CE10099D7DD /* CustomItemView.swift */,
 				E2A3B5782A01785500176282 /* Main.storyboard */,
 				E2A3B57B2A0178A900176282 /* Assets.xcassets */,
@@ -253,6 +256,7 @@
 				E2A3B59B2A02664000176282 /* newsCell.swift in Sources */,
 				E2A3B5942A019E6800176282 /* TableViewCell2.swift in Sources */,
 				E2A3B5872A01806E00176282 /* ViewModel.swift in Sources */,
+				E2AD85922A0818C00053C6E3 /* CustomLabel.swift in Sources */,
 				E2A3B5892A0180C500176282 /* DataResponse.swift in Sources */,
 				E2A3B5752A01785500176282 /* SceneDelegate.swift in Sources */,
 				E260BBEC2A040CE20099D7DD /* CustomItemView.swift in Sources */,

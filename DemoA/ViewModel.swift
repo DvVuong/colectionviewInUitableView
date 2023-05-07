@@ -15,46 +15,34 @@ enum URLError: Error {
 
 class ViewModel {
     
-    
-    
+    var listItem = [GroupListItem]()
     //MARK: Get data
     
-//    func getData<T: Decodable>(url: String, data: T.Type) throws -> Observable<T> {
-//        let string = Observable.just(url)
-//        string.map {url -> URL in
-//            return URL(string: url)!
-//        }
-//        .map {url -> URLRequest in
-//            return URLRequest(url: url)
-//        }
-//        .flatMap { request -> Observable<(response: HTTPURLResponse, data: Data)> in
-//            return URLSession.shared.rx.response(request: request)
-//        }.share(replay: 1)
-//        .filter {response, _ -> Bool in
-//            return 200..<300 ~= response.statusCode
-//        }
-//        .map {_, data  -> Observable<T> in
-//            let codable = JSONDecoder()
-//            let results  = try? codable.decode(T.self, from: data)
-//
-//        }
-//
-//
-//
-//        return Observable.create { create in
-//            <#code#>
-//        }
-//    }
-    
-    @available(iOS 15.0, *)
-    func getdata<T: Decodable>(_ url: String, model: T.Type) async throws -> T {
-        let (data, _) = try  await URLSession.shared.data(from: URL(string: url)!)
+    func setData(_ data: DataCollection) {
+        var group1 = GroupListItem()
+        var typeGroup = ItemType()
+        typeGroup.healthTitle = data.healthTitle
+        typeGroup.lifeTitle = data.lifeTitle
+        group1.listItem.append(typeGroup)
         
-        do {
-            let decoder = JSONDecoder()
-            return try decoder.decode(T.self, from: data)
-        } catch {
-            throw URLError.urlNotFound
-        }
+        
+        var group2 = GroupListItem()
+        var type2 = ItemType()
+        type2.medicalTitle = data.medicalTitle
+        type2.virusTitle = data.virusTitle
+        group2.listItem.append(type2)
+        
+        listItem = [group1, group2]
     }
+}
+
+struct ItemType {
+    var healthTitle: String?
+    var lifeTitle: String?
+    var medicalTitle: String?
+    var virusTitle: String?
+}
+
+struct GroupListItem {
+    var listItem = [ItemType]()
 }

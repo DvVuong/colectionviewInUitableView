@@ -20,6 +20,7 @@ class GeneralExaminationViewController: UIViewController {
         super.viewDidLoad()
 
         navigationController?.setNavigationBarHidden(true, animated: false)
+        setupTapGesture()
     }
     
     

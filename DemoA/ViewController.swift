@@ -18,12 +18,15 @@ class ViewController: UIViewController {
         setUpTable()
         
        
-        arrays.append(.colectionView(model: [DataCollection(name: "colection", id: 1),
-                                             DataCollection(name: "colection2", id: 2),
-                                             DataCollection(name: "colection3", id: 3),
-                                             DataCollection(name: "colection4", id: 4),
-                                             DataCollection(name: "colection5", id: 5),
-                                            ]))
+        arrays.append(.colectionView(model: [DataCollection(name: "Collection", id: 1,
+                                                            healthTitle: "Sức khoẻ",
+                                                            lifeTitle: "Đời Sống",
+                                                            medicalTitle: nil, virusTitle: nil),
+                                             DataCollection(name: "Collection", id: 1,
+                                                            healthTitle: nil,
+                                                            lifeTitle: nil,
+                                                            medicalTitle: "y tế", virusTitle: "Covid-19")
+                                        ]))
         
         
         arrays.append(.list(model: [DataResponse(name: "TableView", id: 1),
@@ -68,7 +71,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         switch arrays[indexPath.section] {
         case .colectionView(let model):
             let cell = listNewTableView.dequeueReusableCell(withIdentifier: "TableViewCell2", for: indexPath) as! TableViewCell2
-//            let item = model[indexPath.section]
             cell.configuraData(model)
             cell.setupCollectionView()
             return cell
