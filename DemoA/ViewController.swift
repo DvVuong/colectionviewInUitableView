@@ -92,8 +92,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = GeneralExaminationViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
-        print("vuongdv Tap tap")
+        if indexPath.row == 1 {
+            let vc = GeneralExaminationViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else {
+            let vc = SuccessfulAppointmentViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }

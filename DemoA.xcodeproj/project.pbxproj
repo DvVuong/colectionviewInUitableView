@@ -25,6 +25,10 @@
 		E2A3B5972A02391E00176282 /* EnumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3B5962A02391E00176282 /* EnumCell.swift */; };
 		E2A3B59B2A02664000176282 /* newsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3B5992A02663B00176282 /* newsCell.swift */; };
 		E2A3B59C2A02664000176282 /* newsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2A3B59A2A02663B00176282 /* newsCell.xib */; };
+		E2A7E96F2A09228900574236 /* SuccessfulAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A7E96D2A09228900574236 /* SuccessfulAppointmentViewController.swift */; };
+		E2A7E9702A09228900574236 /* SuccessfulAppointmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2A7E96E2A09228900574236 /* SuccessfulAppointmentViewController.xib */; };
+		E2A7E9722A0929F800574236 /* SuccessfulAppointmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A7E9712A0929F800574236 /* SuccessfulAppointmentViewModel.swift */; };
+		E2A7E9742A092B5F00574236 /* SuccessfulAppointmentItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A7E9732A092B5F00574236 /* SuccessfulAppointmentItemView.swift */; };
 		E2AD85922A0818C00053C6E3 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD85912A0818C00053C6E3 /* CustomLabel.swift */; };
 		F1A9C5286051166F8F92EE20 /* Pods_DemoA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F3CBEA25FFA41A84F39047 /* Pods_DemoA.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +57,10 @@
 		E2A3B5962A02391E00176282 /* EnumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumCell.swift; sourceTree = "<group>"; };
 		E2A3B5992A02663B00176282 /* newsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsCell.swift; sourceTree = "<group>"; };
 		E2A3B59A2A02663B00176282 /* newsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = newsCell.xib; sourceTree = "<group>"; };
+		E2A7E96D2A09228900574236 /* SuccessfulAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulAppointmentViewController.swift; sourceTree = "<group>"; };
+		E2A7E96E2A09228900574236 /* SuccessfulAppointmentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessfulAppointmentViewController.xib; sourceTree = "<group>"; };
+		E2A7E9712A0929F800574236 /* SuccessfulAppointmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulAppointmentViewModel.swift; sourceTree = "<group>"; };
+		E2A7E9732A092B5F00574236 /* SuccessfulAppointmentItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulAppointmentItemView.swift; sourceTree = "<group>"; };
 		E2AD85912A0818C00053C6E3 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +119,10 @@
 				E2A3B5882A0180C500176282 /* DataResponse.swift */,
 				E2A3B5862A01806E00176282 /* ViewModel.swift */,
 				E2A3B5992A02663B00176282 /* newsCell.swift */,
+				E2A7E9732A092B5F00574236 /* SuccessfulAppointmentItemView.swift */,
+				E2A7E9712A0929F800574236 /* SuccessfulAppointmentViewModel.swift */,
+				E2A7E96E2A09228900574236 /* SuccessfulAppointmentViewController.xib */,
+				E2A7E96D2A09228900574236 /* SuccessfulAppointmentViewController.swift */,
 				E2A3B59A2A02663B00176282 /* newsCell.xib */,
 				E2A3B5922A019E6800176282 /* TableViewCell2.swift */,
 				E211602A2A078CDB00D15A1F /* GeneralExaminationViewController.swift */,
@@ -196,6 +208,7 @@
 				E2A3B58D2A0194A300176282 /* NewsTableViewCell.xib in Resources */,
 				E211602D2A078CDB00D15A1F /* GeneralExaminationViewController.xib in Resources */,
 				E2A3B5952A019E6800176282 /* TableViewCell2.xib in Resources */,
+				E2A7E9702A09228900574236 /* SuccessfulAppointmentViewController.xib in Resources */,
 				E2A3B57A2A01785500176282 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,10 +263,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E211602C2A078CDB00D15A1F /* GeneralExaminationViewController.swift in Sources */,
+				E2A7E96F2A09228900574236 /* SuccessfulAppointmentViewController.swift in Sources */,
 				E2A3B5772A01785500176282 /* ViewController.swift in Sources */,
 				E2A3B5732A01785500176282 /* AppDelegate.swift in Sources */,
+				E2A7E9722A0929F800574236 /* SuccessfulAppointmentViewModel.swift in Sources */,
 				E2A3B58C2A0194A300176282 /* NewsTableViewCell.swift in Sources */,
 				E2A3B59B2A02664000176282 /* newsCell.swift in Sources */,
+				E2A7E9742A092B5F00574236 /* SuccessfulAppointmentItemView.swift in Sources */,
 				E2A3B5942A019E6800176282 /* TableViewCell2.swift in Sources */,
 				E2A3B5872A01806E00176282 /* ViewModel.swift in Sources */,
 				E2AD85922A0818C00053C6E3 /* CustomLabel.swift in Sources */,
