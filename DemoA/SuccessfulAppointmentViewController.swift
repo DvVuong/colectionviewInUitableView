@@ -9,8 +9,8 @@ import UIKit
 import RxSwift
 
 class SuccessfulAppointmentViewController: UIViewController {
-
-    
+    @IBOutlet weak var backHomeButton: UIButton!
+    @IBOutlet weak var moveToDetailExamination: UIButton!
     @IBOutlet weak var contentStackView: UIStackView!
     private var viewModel: SuccessfulAppointmentViewModel = SuccessfulAppointmentViewModel()
     override func viewDidLoad() {
@@ -18,6 +18,14 @@ class SuccessfulAppointmentViewController: UIViewController {
         getdata()
         compressDataToView()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        setupUI()
+    }
+    
+    private func setupUI() {
+        let underlineAttribute = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue,
+                                  NSAttributedString.Key.underlineColor: UIColor.blue] as [NSAttributedString.Key : Any]
+        let underlineAttributedString = NSAttributedString(string: "Quay về trang chủ", attributes: underlineAttribute)
+        backHomeButton.setAttributedTitle(underlineAttributedString, for: .normal)
     }
     
     private func getdata() {

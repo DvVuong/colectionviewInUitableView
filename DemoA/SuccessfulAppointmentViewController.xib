@@ -12,7 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessfulAppointmentViewController" customModule="DemoA" customModuleProvider="target">
             <connections>
+                <outlet property="backHomeButton" destination="kcT-NP-ZTf" id="kqb-rw-iMV"/>
                 <outlet property="contentStackView" destination="V3v-B7-GsA" id="Zjc-fs-yPJ"/>
+                <outlet property="moveToDetailExamination" destination="Mvj-QQ-LSu" id="0Pa-MW-XcE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
